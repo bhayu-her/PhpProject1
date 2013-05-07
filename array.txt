@@ -1,0 +1,37 @@
+------PHP Indexed Arrays
+$cars=array("Volvo","BMW","Toyota");
+$cars[0]="Volvo"
+$cars[1]="BMW"
+$cars[2]="Toyota"
+
+<?php
+$cars=array("Volvo","BMW","Toyota");
+$arrlength=count($cars);
+
+for($x=0;$x<$arrlength;$x++)
+  {
+  echo $cars[$x];
+  echo "<br>";
+  }
+?> 
+
+------PHP Associative Arrays
+$age=array("Peter"=>"35","Ben"=>"37","Joe"=>"43");
+or:
+$age['Peter']="35";
+$age['Ben']="37";
+$age['Joe']="43"; 
+
+<?php
+$age=array("Peter"=>"35","Ben"=>"37","Joe"=>"43");
+
+foreach($age as $x=>$x_value)
+  {
+  echo "Key=" . $x . ", Value=" . $x_value;
+  echo "<br>";
+  }
+?> 
+
+Key=Peter, Value=35
+Key=Ben, Value=37
+Key=Joe, Value=43
